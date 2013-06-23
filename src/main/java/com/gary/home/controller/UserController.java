@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class UserController {
-    @RequestMapping("/getUser")
+    @RequestMapping("/ftl/getUser")
     public String getUser(Model model){
-        model.addAttribute("myname", "I am 玄玉");
+        model.addAttribute("myname", "I am名称 玄玉");
         return "myfree";
     }
 
